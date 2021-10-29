@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrollex.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+    <title>Ivana Vann Contact</title>
+</head>
+
+<body>
+    <header id="header2">
+        <a href="#menu2"><img src="https://icongr.am/clarity/bars.svg?size=30&color=FFFFFF" /></a>
+    </header>
+    <nav id="menu2">
+        <ul class="links">
+            <li><a class="opcionesMenu" target="_self" href="index.html">Principal</a></li>
+            <li><a class="opcionesMenu" target="_self" href="about.html">Acerca de mi</a></li>
+            <li><a class="opcionesMenu" href="https://www.linkedin.com/in/ivana-provvidenza/" target="_blank">LinkedIn</a></li>
+            <li><a class="opcionesMenu" target="_blank" href="https://github.com/ivanapr">GitHub</a></li>
+            <li><a class="opcionesMenu" href="https://www.artstation.com/ivanavann" target="_blank">Artstation</a></li>
+            <li><a class="opcionesMenu" target="_blank" href="https://www.sketchfab.com/ivanavann">Sketchfab</a></li>
+            <li><a class="opcionesMenu" target="_blank" href="https://oyasumivannvann.itch.io/">Itch</a></li>
+            <li><a class="opcionesMenu" target="_blank" href="https://www.instagram.com/ivanavannart">Instagram</a></li>
+            <li><a class="opcionesMenu" target="_blank" href="mailto:ivana.provvidenza@gmail.com">Correo</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <h2 class="tituloImportante quiensoy" id="main">Contactame</h2>
+    <form action="form.js" method="POST" target="_blank">
+        <label for="firstname">Nombre: </label><input type="text" id="fname" name="fname" required><br><br>
+        <label for="mail">Correo: </label><input type="email" id="mail" name="mail" required><br><br>
+        <label for="phone">Teléfono: </label><input type="number" id="phone" name="phone" required><br>
+        <p>Tipo de trabajo: <br>
+            <label for="typework"><input type="radio" id="prop" name="type" value="prop" checked="checked">Prop</label>
+            <label for="typework"><input type="radio" id="character" name="type" value="character">Personaje</label>
+            <label for="typework"><input type="radio" id="environment" name="type" value="environment">Environment</label>
+        </p>
+        <p>Trabajo requerido: <br>
+            <label for="requiredwork"><input type="checkbox" name="work" value="Modelo">Modelo</label>
+            <label for="requiredwork"><input type="checkbox" name="work" value="Texturizado">Texturizado</label>
+            <label for="requiredwork"><input type="checkbox" name="work" value="Vestimenta">Vestimenta</label>
+            <label for="requiredwork"><input type="checkbox" name="work" value="Rigging">Rig</label>
+            <label for="requiredwork"><input type="checkbox" name="work" value="Animacion">Animación</label>
+        </p>
+        <label for="subject">Asunto: </label><input type="text" id="subject" name="subject" value="Pedido de trabajo" required><br><br>
+        <label for="details"><textarea name="textarea" rows="5" cols="50" placeholder="Detalles del pedido..." required></textarea></label><br><br>
+        <label for="references" value="references">Imágenes de referencia:   <input type="file" id="myfile" name="myfile"></label><br><br>
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="RESET"><br><br>
+    </form>
+    <hr>
+    <footer id="footer">
+        <div class="icons">
+            <a target="_blank" href="https://www.linkedin.com/in/ivana-provvidenza/"><span><img src="https://icongr.am/devicon/linkedin-original.svg?size=30&color=ffffff"/></span></a>
+            <a target="_blank" href="https://github.com/ivanapr"><span><img src="https://icongr.am/entypo/github.svg?size=30&color=ffffff" /></span></a>
+            <a target="_blank" href="mailto:ivana.provvidenza@gmail.com"><span><img src="https://icongr.am/fontawesome/envelope-o.svg?size=30&color=ffffff" /></span></a>
+        </div>
+        <div class="copyright"> &copy; Made by Ivana Provvidenza. </div>
+    </footer>
+</body>
