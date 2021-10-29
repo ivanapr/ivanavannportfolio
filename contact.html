@@ -37,10 +37,31 @@
     <br>
     <br>
     <h2 class="tituloImportante quiensoy" id="main">Contactame</h2>
-    <form action="form.js" method="POST" target="_blank">
-        <label for="firstname">Nombre: </label><input type="text" id="fname" name="fname" required><br><br>
-        <label for="mail">Correo: </label><input type="email" id="mail" name="mail" required><br><br>
-        <label for="phone">Teléfono: </label><input type="number" id="phone" name="phone" required><br>
+    <form action="" id="formulario" class="formulario">
+        <div class="formulario__grupo" id="grupo__fname">
+            <label for="fname" class="formulario__label">Nombre:</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="fname" id="fname">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El nombre solo puede contener letras y espacios.</p>
+        </div><br>
+        <div class="formulario__grupo" id="grupo__mail">
+            <label for="mail" class="formulario__label">Correo Electrónico:</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="mail" id="mail" placeholder="correo@correo.com">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guión bajo.</p>
+        </div><br>
+        <div class="formulario__grupo" id="grupo__phone">
+            <label for="phone" class="formulario__label">Teléfono:</label>
+            <div class="formulario__grupo-input">
+                <input type="number" class="formulario__input" name="phone" id="phone">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El télefono solo puede contener números y el máximo son 14 dígitos.</p>
+        </div><br>
         <p>Tipo de trabajo: <br>
             <label for="typework"><input type="radio" id="prop" name="type" value="prop" checked="checked">Prop</label>
             <label for="typework"><input type="radio" id="character" name="type" value="character">Personaje</label>
@@ -53,11 +74,24 @@
             <label for="requiredwork"><input type="checkbox" name="work" value="Rigging">Rig</label>
             <label for="requiredwork"><input type="checkbox" name="work" value="Animacion">Animación</label>
         </p>
-        <label for="subject">Asunto: </label><input type="text" id="subject" name="subject" value="Pedido de trabajo" required><br><br>
-        <label for="details"><textarea name="textarea" rows="5" cols="50" placeholder="Detalles del pedido..." required></textarea></label><br><br>
+        <div class="formulario__grupo" id="grupo__subject">
+            <label for="subject" class="formulario__label">Asunto:</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="subject" id="subject" placeholder="Pedido de trabajo">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">El asunto solo puede contener letras, números y espacios.</p>
+        </div><br>
+        <label for="details"><textarea name="textarea" rows="5" cols="50" placeholder="Detalles del pedido..."></textarea></label><br><br>
         <label for="references" value="references">Imágenes de referencia:   <input type="file" id="myfile" name="myfile"></label><br><br>
-        <input type="submit" value="ENVIAR">
-        <input type="reset" value="RESET"><br><br>
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor complete el formulario correctamente. </p>
+        </div>
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">ENVIAR</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+        </div><br>
+        <input type="reset" class="formulario__btn" value="RESET"><br><br>
     </form>
     <hr>
     <footer id="footer">
@@ -68,4 +102,8 @@
         </div>
         <div class="copyright"> &copy; Made by Ivana Provvidenza. </div>
     </footer>
+    <script src="js/form.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
+
+</html>
